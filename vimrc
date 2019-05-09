@@ -115,9 +115,9 @@ set display+=lastline
 inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
-endif
+#if has('mouse')
+#  set mouse=a
+#endif
 
 " If linux then set ttymouse
 let s:uname = system("echo -n \"$(uname)\"")
