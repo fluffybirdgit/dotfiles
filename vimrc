@@ -123,6 +123,8 @@ inoremap <C-U> <C-G>u<C-U>
 let s:uname = system("echo -n \"$(uname)\"")
 if !v:shell_error && s:uname == "Linux" && !has('nvim')
   set ttymouse=xterm
+  vmap <Tab> >gv
+  vmap <S-Tab> <gv
 endif
 
 " Convenient command to see the difference between the current buffer and the
