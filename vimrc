@@ -118,6 +118,8 @@ inoremap <C-U> <C-G>u<C-U>
 "if has('mouse')
 "  set mouse=a
 "endif
+" mouse=a is fucking anoying"
+set mouse-=a
 
 " If linux then set ttymouse
 let s:uname = system("echo -n \"$(uname)\"")
